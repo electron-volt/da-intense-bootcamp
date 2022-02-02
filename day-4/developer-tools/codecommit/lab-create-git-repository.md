@@ -11,7 +11,9 @@ We will&#x20;
 
 Windows users: I recommend Git Bash for this lab.&#x20;
 
-## Set up HTTPS Git credentials for CodeCommit
+## Setting up access&#x20;
+
+### Option 1: Set up HTTPS Git credentials for CodeCommit
 
 We will create credentials for our admin user. Just make sure that you are signed in as the user that you intend to create credentials for.&#x20;
 
@@ -22,6 +24,14 @@ On the user details page, choose the **Security Credentials** tab, and in **HTTP
 ![Generate credentials](<../../../.gitbook/assets/image (79).png>)
 
 Be sure to download your credentials or store them in a password manager. You cannot choose your own username and **you cannot view the password later.**&#x20;
+
+### **Option 2: Git-remote-commit**
+
+If for some reason you can't access your IAM user permissions, then you can use git-remote-commit. It works well when used inside AWS CloudShell.&#x20;
+
+Follow these instructions:
+
+{% embed url="https://github.com/aws/git-remote-codecommit" %}
 
 ## Create the Git repository&#x20;
 
@@ -34,6 +44,8 @@ Give the repo a name and click **create.**
 That's it!&#x20;
 
 ## Clone the repository
+
+### Opion 1: If you have the Git credentials&#x20;
 
 From the console, get the HTTPS URL that you need to clone your repository;
 
@@ -56,6 +68,18 @@ git config --global init.defaultBranch main
 ```
 
 Otherwise the default branch will be called master.&#x20;
+
+### Option 2: GRC
+
+You can find the clone URL from the console
+
+![GRC URL ](<../../../.gitbook/assets/image (140).png>)
+
+For my repo, which is called test-repo the command is&#x20;
+
+```
+git clone codecommit::eu-west-1://test-repo
+```
 
 ## First commit
 

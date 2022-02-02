@@ -221,4 +221,4 @@ Create a new test event with the following contents and test the function.&#x20;
 
 Successful execution looks like this:
 
-![](<../../.gitbook/assets/image (140).png>)
+![](<../../.gitbook/assets/image (140) (1).png>)

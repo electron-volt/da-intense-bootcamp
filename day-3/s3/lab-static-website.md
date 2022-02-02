@@ -19,7 +19,7 @@ Once your bucket is ready, click on it and open the Properties tab.&#x20;
 
 Scroll all the way to the bottom for Static website hosting and click Edit.
 
-![Keep scrolling till you get there](<../../.gitbook/assets/image (159).png>)
+![Keep scrolling till you get there](<../../.gitbook/assets/image (159) (1).png>)
 
 On the way down you will see strange things like Requester pays, Transfer acceleration, Object lock.. yes, S3 is very feature-heavy.&#x20;
 

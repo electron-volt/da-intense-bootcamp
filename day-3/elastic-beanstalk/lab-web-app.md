@@ -10,13 +10,19 @@ GitHub repo
 
 No login is necessary, so you don't need a GitHub account.&#x20;
 
-## The lab
+## Create application&#x20;
 
 Without too much theory, let's go right ahead and see what we can do with Elbe.&#x20;
 
-Navigate to the Elastic Beanstalk console. In my account I have already built things with Elastic beanstalk, so the landing page may look different to you, but try to find your way to a "Create a new environment" button somewhere.&#x20;
+Navigate to the Elastic Beanstalk console.
 
-We are going to create a sample application using PHP/Python/Docker/whatever you like.&#x20;
+The GUI has been recently changed, but you should be able to find an orange button that says "Create application". Go ahead and click on it.&#x20;
+
+&#x20;
+
+![GUI in January 2022](<../../.gitbook/assets/image (159).png>)
+
+We are going to create a sample application using Python.
 
 Elastic Beanstalk is going to create on our behalf
 
@@ -65,6 +71,8 @@ Go ahead and download this zip [https://docs.aws.amazon.com/elasticbeanstalk/lat
 
 Unzip it, make whatever changes you want (maybe change the background color to #FFFF4081 and see what happens..), then zip it back up.&#x20;
 
+Note: if you have problems with Elastic Beanstalk, then make sure that your resources are at the root of the ZIP. If the resources are inside a folder inside the ZIP, then your deployment may fail.
+
 Let's go to Elbe.
 
 Go to Application versions.
@@ -95,6 +103,6 @@ Deploy to the environment Mytestapp-env.
 
 My new version broke my environment. Rebooting all the servers didn't help.&#x20;
 
-Were the hidden folders needed after all?&#x20;
+Were the hidden folders needed after all? This lab will be updated and improved later.
 
 Anyway - we will see Elastic Beanstalk again at the end of day 4.&#x20;

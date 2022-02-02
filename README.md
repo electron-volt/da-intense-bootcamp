@@ -4,6 +4,14 @@ description: Welcome to the AWS Developer Associate intensive course!
 
 # 🍒 Course overview
 
+## GitBook and images not loading
+
+Sometimes GitBook doesn't load images correctly. In that case you can always access the course material through GitHub as well:
+
+{% embed url="https://github.com/electron-volt/da-intense-bootcamp" %}
+GitHub repo
+{% endembed %}
+
 ## Agenda for the week
 
 We will cover the following topics over the next five days:
