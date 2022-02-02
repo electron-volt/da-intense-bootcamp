@@ -261,6 +261,8 @@ Copy the DNS name and paste it into a browser.&#x20;
 
 When we first tested our instances, we used their public IP addresses to access them over the internet. Now when we used the DNS name of our ALB, our request went through the load balancer and we reached the web-a instance without its public IP.&#x20;
 
+## Edit security groups&#x20;
+
 Let's go edit the security group **webserver-sg**.&#x20;
 
 1. Remove the inbound rule that allows HTTP from your IP&#x20;
@@ -292,7 +294,7 @@ echo "<h1>This is where orders get processed</h1>" > index.html
 ```
 {% endcode %}
 
-There is now an "Orders" directory in the web-a instance. Next we want to tell the load balancer how to get there.&#x20;
+There is now an "Orders" directory in the **web-a** instance. Next we want to tell the load balancer how to get there.&#x20;
 
 ### Edit ALB rules
 
@@ -355,6 +357,7 @@ For either instance web-a and web-c,&#x20;
 
 1. SSH into them and create more directories
    1. make a new directory under /var/www/html and put an index.html there
+   2. steps are the same as for the orders directory in web-a&#x20;
 2. Create a rule in the ALB's HTTP listener for that directory
 3. You can even play with different weights
 

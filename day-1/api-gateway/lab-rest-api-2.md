@@ -72,7 +72,8 @@ You should get this response:
 
 1. Go to API Gateway.&#x20;
 2. Click Create API
-3. Under REST API, click build
+3. Under REST API, click build.
+   1. there are two kinds of REST API's. We want the one that is **not** private.
 4. We want a REST API, new API&#x20;
 5. Give it a name **lambda-integration**
 6. Endpoint type is regional
@@ -197,7 +198,9 @@ The test invocation is a simulation and has limitations. For example, it bypasse
 
 ### Test the API
 
-You can now test the API using for example cURL. Just replace the relevant fields:
+You can now test the API using for example cURL. Postman, Visual Studio Code work too.
+
+Just replace the relevant fields:
 
 ```
 curl -v -X POST \

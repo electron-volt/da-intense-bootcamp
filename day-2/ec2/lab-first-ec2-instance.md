@@ -125,7 +125,7 @@ Now let's SSH into our instance and maybe change the text to something else.&#x2
 
 ### Windows users using PuTTY
 
-Instructions are here: [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html)
+If you want to use PuTTY, then instructions are here: [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html)
 
 ### MacOS or Linux
 

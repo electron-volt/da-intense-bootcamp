@@ -51,11 +51,11 @@ echo "<h1>This is " $EC2_INSTANCE_ID "</h1>" > index.html
 
 In the user data:
 
-7\. we are using EC2 instance metadata to get the instance id of the running instance&#x20;
+7\. we are using EC2 instance metadata to get the instance id of the running instance. The IP 169.254.169.254 contains instance metadata and is accessible from within any running EC2 instance.&#x20;
 
 8\. we are putting together the string that the index.html site displays to the world.&#x20;
 
-An example of what the result will look like:
+An example of what the result will look like: the instance is a webserver that is showing its instance id to the world. This will be useful later when we want to see in the browser which instance the ALB is directing traffic to.
 
 ![result of our user data script](<../.gitbook/assets/image (380).png>)
 

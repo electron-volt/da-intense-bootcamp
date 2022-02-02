@@ -165,6 +165,12 @@ Repeat steps for all routes. This is what it looks like when GET /items route ha
 
 Everything should be working now! You will find the invoke URL of your API from API Gateway. We can test it using cURL (any tool of your choice). If you want more information from cURL, use curl -v.&#x20;
 
+The new items need to have&#x20;
+
+* an id (which is sent as a String, therefore it needs quotes around it)&#x20;
+* a price
+* a name.&#x20;
+
 ### Create an item
 
 ```

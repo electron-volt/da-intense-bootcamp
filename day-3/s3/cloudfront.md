@@ -1,6 +1,6 @@
 # CloudFront
 
-## Content Division Network (CDN)
+## Content Distribution Network (CDN)
 
 So we learned that we can replicate the contents of an S3 bucket to a different region, for example to reduce latency. What if we want to serve content globally to people all around the world? Do we set up buckets in every region and replicate everywhere just in case? Nah. We use CloudFront, AWS's CDN solution.&#x20;
 
