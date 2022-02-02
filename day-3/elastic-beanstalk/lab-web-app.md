@@ -1,5 +1,17 @@
 # LAB: Web app
 
+## Note: if images aren't loading..
+
+The same material is available in GitHub
+
+{% embed url="https://github.com/electron-volt/da-intense-bootcamp/blob/master/day-3/elastic-beanstalk/lab-web-app.md" %}
+GitHub repo
+{% endembed %}
+
+No login is necessary, so you don't need a GitHub account.&#x20;
+
+## The lab
+
 Without too much theory, let's go right ahead and see what we can do with Elbe.&#x20;
 
 Navigate to the Elastic Beanstalk console. In my account I have already built things with Elastic beanstalk, so the landing page may look different to you, but try to find your way to a "Create a new environment" button somewhere.&#x20;
