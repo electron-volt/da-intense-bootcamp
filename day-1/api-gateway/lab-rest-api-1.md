@@ -133,7 +133,7 @@ Choose New Stage, give your stage a name (beta/test/whatever) and deploy.&#x20;
 
 ### Test the API&#x20;
 
-We will test the API with a simple GET request via the browser. Copy the invoke URL of your API and then add /\<name of your stage>?name=\<your name>\&city=\<some city> to the end. For example
+We will test the API with a simple GET request via the browser. Copy the invoke URL of your API and then add /helloworld?\&city=\<some city>\&name=\<some name> to the end. For example
 
 {% embed url="https://abc123efd.execute-api.us-east-1.amazonaws.com/beta/helloworld?city=Longyearbyen&name=Cecilia" %}
 

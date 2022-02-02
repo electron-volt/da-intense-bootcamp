@@ -10,6 +10,15 @@ description: >-
 
 Let's start by creating an execution role for your function. This role is what allows your function to access AWS resources, for example write logs to CloudWatch.&#x20;
 
+### No CLI? No problem.
+
+If you don't have the AWS CLI installed on your local machine, then you can use&#x20;
+
+* AWS CloudShell
+* AWS Cloud9 - more about this on day 4.&#x20;
+
+CloudShell is a terminal that you can use via the browser. It doesn't work in all regions, but you can switch to a region where CloudShell is supported. Using it is very straightforward and you can google instructions to help you if you need.&#x20;
+
 ### Create an execution role
 
 * [ ] Create a .json file with the following content and name it trust-policy.json
