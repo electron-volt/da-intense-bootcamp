@@ -123,6 +123,7 @@
     * [Pipeline execution](day-4/lab-ci-cd-pipeline-for-ecs/pipeline-execution.md)
     * [Blue/green deployment](day-4/lab-ci-cd-pipeline-for-ecs/blue-green-deployment.md)
     * [Test](day-4/lab-ci-cd-pipeline-for-ecs/test.md)
+    * [Clean up](day-4/lab-ci-cd-pipeline-for-ecs/clean-up.md)
   * [🥂 End of day 4](day-4/end-of-day-4.md)
 * [Day 5](day-5/README.md)
   * [Application integration](day-5/application-integration/README.md)
