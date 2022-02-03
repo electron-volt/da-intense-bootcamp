@@ -27,7 +27,7 @@ Be sure to download your credentials or store them in a password manager. You ca
 
 ### **Option 2: Git-remote-commit**
 
-If for some reason you can't access your IAM user permissions, then you can use git-remote-commit. It works well when used inside AWS CloudShell.&#x20;
+If for some reason you can't access your IAM user permissions, then you can use git-remote-commit. It works well when used inside **AWS CloudShell**.&#x20;
 
 Follow these instructions:
 
@@ -69,9 +69,25 @@ git config --global init.defaultBranch main
 
 Otherwise the default branch will be called master.&#x20;
 
-### Option 2: GRC
+## Option 2: GRC
 
-You can find the clone URL from the console
+go to CloudShell
+
+no need to configure credentials. No access keys, no profile, no nothing.
+
+run these commands
+
+```
+curl -O https://bootstrap.pypa.io/get-pip.py
+python3 get-pip.py --user
+pip install git-remote-codecommit
+```
+
+then if your codecommit repository is already created, go to codecommit, clone url, pick HTTPS (GRC)
+
+you will get a url like codecommit::eu-west-1://test-repo
+
+here my repo name is "test-repo"
 
 ![GRC URL ](<../../../.gitbook/assets/image (140).png>)
 
