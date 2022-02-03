@@ -138,7 +138,7 @@
     * [CloudTrail](day-5/security/cloudtrail.md)
     * [KMS](day-5/security/kms/README.md)
       * [LAB: S3 encryption](day-5/security/kms/lab-s3-encryption.md)
-      * [LAB: Encryption at rest](day-5/security/kms/lab-encryption-at-rest.md)
+      * [LAB: Encryption at rest (optional)](day-5/security/kms/lab-encryption-at-rest-optional.md)
     * [Parameter Store](day-5/security/parameter-store.md)
   * [Cognito](day-5/cognito.md)
   * [🦄 Serverless web application](day-5/serverless-web-application/README.md)

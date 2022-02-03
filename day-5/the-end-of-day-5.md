@@ -1,7 +1,26 @@
 # 🍸 The end of day 5
 
-Congratulations, you made it through the end! This has been a very intense AWS bootcamp.&#x20;
+Congratulations, you made it! 🏆
 
-We've been able to build some working (if not very useful) services.&#x20;
+Now before you go take a well-earned break from your studies, one last time...
 
-Now go take a well-earned break from your studies!&#x20;
+## Clean up&#x20;
+
+Please make sure that your account has none of these resources running:
+
+* EC2 instances&#x20;
+* Load balancers
+* NAT Gateways.&#x20;
+
+Check all the regions that you have used.&#x20;
+
+You can also empty and delete
+
+* CodeCommit repos
+* ECR repos
+* CodeBuild projects
+* CodePipelines
+* S3 buckets and their contents
+* CloudFormation stacks
+
+## Thanks for joining!&#x20;

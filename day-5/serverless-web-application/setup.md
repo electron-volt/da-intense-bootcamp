@@ -13,9 +13,11 @@ Choose one of these regions to build this lab in and put all of your resources t
 
 You will need the HTTPS git credentials we created on day 4, in the CodeCommit lab.&#x20;
 
+If you do not have access to IAM credentials, then please use a combination of Cloudshell and Git-remote-commit. Instructions are in the CodeCommit lab from day 4.&#x20;
+
 ## Cloud9 IDE
 
-Create a Cloud9 IDE in your chosen region and open the terminal.&#x20;
+Create a Cloud9 IDE in your chosen region and open the terminal. Note: if you are using CloudShell due to git-remote-commit, then pick a region where CloudShell is supported.&#x20;
 
 ## Set up our Git repository
 

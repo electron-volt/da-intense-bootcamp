@@ -12,3 +12,10 @@
 
 13:30-16:00 Final lab: Serverless web application with authentication&#x20;
 
+### Agenda
+
+This day has been intentionally designed to be a little easier. If there is a lab that you did not have time to complete on day 4, there should be time for it this morning.&#x20;
+
+We will look at different ways to couple components together. Then we will look at ways of securing applications through authentication, authorization and encryption.&#x20;
+
+At the end of the day we build a web application that has in-built authentication included.&#x20;

@@ -14,5 +14,8 @@ Step Functions is based on state machines and tasks.&#x20;
 
 AWS list many use cases for Step Functions in their documentation&#x20;
 
-[https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html#application](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html#application)
+{% embed url="https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html#application" %}
 
+## Labs
+
+There are three labs. You can pick one or do all three if you like.&#x20;
