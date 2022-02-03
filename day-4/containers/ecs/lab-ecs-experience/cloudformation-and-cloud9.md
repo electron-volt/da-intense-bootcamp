@@ -4,6 +4,24 @@
 
 First, let's switch to the Ireland region, eu-west-1. We will build our lab in this region.&#x20;
 
+### IMPORTANT: VPC
+
+If you have built custom VPC's in the Ireland region, please make sure that there is no overlap between their CIDR blocks and the following CIDR blocks:
+
+```
+    private-subnet-1: {CIDR: 10.0.3.0/24}
+    private-subnet-2: {CIDR: 10.0.4.0/24}
+    public-subnet-1: {CIDR: 10.0.1.0/24}
+    public-subnet-2: {CIDR: 10.0.2.0/24}
+    vpc: {CIDR: 10.0.0.0/16}
+```
+
+If networking and CIDR blocks are not completely familiar, then it is best to delete all custom VPC's in the Ireland region first. This way you should only have one VPC in Ireland at the start of this lab:
+
+![default VPC in Ireland](<../../../../.gitbook/assets/image (216).png>)
+
+The default VPC will have CIDR 172.31.0.0/16.
+
 ## CloudFormation stack
 
 Here is a template that we are going to use to create a stack.&#x20;

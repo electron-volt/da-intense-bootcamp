@@ -39,7 +39,7 @@ Select both and click Open. They open in different tabs. First one:
 
 Second one:
 
-![punctuation is important people](<../../.gitbook/assets/image (216).png>)
+![punctuation is important people](<../../.gitbook/assets/image (216) (1).png>)
 
 I know, "these labs really are simple".&#x20;
 
