@@ -8,6 +8,10 @@ Note: this lab is not entirely in the free tier. There are resources like the NA
 
 I built this environment from start to finish in the Ireland region and it cost me less than $1.50, so I wouldn't call it expensive.&#x20;
 
+### Clean up after the lab&#x20;
+
+Please be sure to delete the resources after you are done - otherwise the NAT Gateway will continue to generate costs.&#x20;
+
 ## Agenda
 
 In this lab we will&#x20;
@@ -16,9 +20,6 @@ In this lab we will&#x20;
 * Create Amazon ECS **cluster, task definitions**, and **services**.
 * Choose right **launch type** - either **EC2** or **Fargate** - for each service.
 * Deploy simple containerized application **cats and dogs,** path-routed through an ALB.
-* Monitor ECS cluster and services in Amazon CloudWatch **Container Insights**.
-* Centralize **container logs** using **AWS FireLens** and Amazon CloudWatch Logs.
-* Scale ECS **services** and **cluster** automatically.
 
 ## Sections
 
