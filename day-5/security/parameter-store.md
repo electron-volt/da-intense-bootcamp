@@ -1,5 +1,7 @@
 # Parameter Store
 
+## Before you start - ask Eve for a workaround!
+
 This will be a useful all-purpose lab that combines
 
 * Parameter store
