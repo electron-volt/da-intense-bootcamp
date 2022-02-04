@@ -1,13 +1,13 @@
 # Parameter Store
 
-## Before you start - ask Eve for a workaround!
-
 This will be a useful all-purpose lab that combines
 
 * Parameter store
 * Lambda
 * AWS SAM templates
-* X-Ray (which we have not discussed yet).&#x20;
+* X-Ray (which we have not discussed yet).
+
+Note: this lab will only work if you have your own personal account, where you are logged in as a normal IAM user. &#x20;
 
 ### 🎯 Region: us-east-1
 
@@ -267,11 +267,15 @@ Head over to Parameter store. Sure enough, there is already a parameter there, c
 Choose **Create Parameter**.
 
 * For **Name**, enter _/dev/parameterStoreBlog/appSecrets_.
+* **Tier** is **Standard**
 * For **Type**, select **Secure String**.
-* For **KMS Key ID**, choose _alias/ParameterStoreBlogKeyDev_, which is the key that your SAM template created.
+* **KMS key source**: My current account&#x20;
+* For **KMS Key ID**, choose from the dropdown _alias/ParameterStoreBlogKeyDev_, which is the key that your SAM template created.
 * For **Value**, enter `{"secretKey": "secretValue"}`.
 
-The value disappears from view as soon as it is entered.&#x20;
+The value disappears from view as soon as you move your focus away from the text area. It is replaced by dots.&#x20;
+
+Click **create parameter**.&#x20;
 
 ![parameter creation](<../../.gitbook/assets/image (279).png>)
 
