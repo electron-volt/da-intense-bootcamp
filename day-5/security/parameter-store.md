@@ -7,7 +7,7 @@ This will be a useful all-purpose lab that combines
 * AWS SAM templates
 * X-Ray (which we have not discussed yet).&#x20;
 
-🎯
+### 🎯 Region: us-east-1
 
 Note: In this lab, we want to work in the **us-east-1** region.&#x20;
 
@@ -27,7 +27,7 @@ Here are the resources that the stack will create:
 
 ### The SAM template
 
-This is what the template looks like. You do not have to save this on your machine, just take a look:
+This is what the template looks like. You **do not have to save this on your machine,** just take a look:
 
 ```yaml
 AWSTemplateFormatVersion: '2010-09-09'
@@ -161,7 +161,7 @@ Transform: AWS::Serverless-2016-10-31
 
 ### The Lambda function&#x20;
 
-Take a moment to read through the Lambda function code (this is included in the template, you do not need to copy this):
+Take a moment to read through the Lambda function code (this is included in the template, **you do not need to copy this):**
 
 ```python
 import os, traceback, json, configparser, boto3
@@ -224,11 +224,15 @@ Please make sure that you are in region us-east-1 (N. Virginia), otherwise the t
 We are going to be creating a stack using a SAM template.
 
 1. Navigate to CloudFormation
-2. Create stack&#x20;
-3. Template is ready, S3 URI is [https://s3.amazonaws.com/computeblog-us-east-1/lambda-parameter-store/sam-template.yaml](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=computeblogexample\&templateURL=https://s3.amazonaws.com/computeblog-us-east-1/lambda-parameter-store/sam-template.yaml)
-4. Call the stack whatever you want
-5. In the Parameters section, provide your own username when asked
-6. You will need to check three boxes before you can create the stack.&#x20;
+2. Click **Create stack** and select **with new resources (standard)**&#x20;
+3. Pick **Template is ready**
+4. For S3 URI paste in https://s3.amazonaws.com/computeblog-us-east-1/lambda-parameter-store/sam-template.yaml\
+   I recommend opening Designer in a new tab and taking a look at the contents.&#x20;
+5. Back in the CloudFormation console, click **Next**
+6. Call the stack **PS-lab**
+7. In the Parameters section, provide your own username when asked. This will be the username of the IAM user that you are logged in as.&#x20;
+8. Click next a few times till you get to the following "Capabilities and transforms":
+9. You will need to check three boxes before you can create the stack.&#x20;
 
 !["I have read and agree to terms and conditions"](<../../.gitbook/assets/image (14).png>)
 
