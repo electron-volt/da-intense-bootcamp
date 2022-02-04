@@ -7,8 +7,6 @@ This will be a useful all-purpose lab that combines
 * AWS SAM templates
 * X-Ray (which we have not discussed yet).
 
-Note: this lab will only work if you have your own personal account, where you are logged in as a normal IAM user. &#x20;
-
 ### 🎯 Region: us-east-1
 
 Note: In this lab, we want to work in the **us-east-1** region.&#x20;
@@ -29,16 +27,12 @@ Here are the resources that the stack will create:
 
 ### The SAM template
 
-This is what the template looks like. You **do not have to save this on your machine,** just take a look:
+This is what the template looks like. Copy the template and save it locally as ps-template.yml
 
+{% code title="ps-template.yml" %}
 ```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Integrating Lambda with Parameter Store
-Parameters:
-  IAMUsername:
-    Description: Name of the IAM user who will be the administrator of the KMS key
-      we create. This user will be able to encrypt values and manage the key.
-    Type: String
 Resources:
   ParameterStoreBlogDevEncryptionKey:
     Properties:
@@ -66,7 +60,7 @@ Resources:
           Effect: Allow
           Principal:
             AWS:
-            - Fn::Sub: arn:aws:iam::${AWS::AccountId}:user/${IAMUsername}
+            - '*'
           Resource: '*'
           Sid: Allow administration of the key & encryption of new values
         - Action:
@@ -160,6 +154,7 @@ Resources:
     Type: AWS::SSM::Parameter
 Transform: AWS::Serverless-2016-10-31
 ```
+{% endcode %}
 
 ### The Lambda function&#x20;
 
@@ -228,13 +223,12 @@ We are going to be creating a stack using a SAM template.
 1. Navigate to CloudFormation
 2. Click **Create stack** and select **with new resources (standard)**&#x20;
 3. Pick **Template is ready**
-4. For S3 URI paste in https://s3.amazonaws.com/computeblog-us-east-1/lambda-parameter-store/sam-template.yaml\
+4. Upload the **ps-template.yml** from your local machine. \
    I recommend opening Designer in a new tab and taking a look at the contents.&#x20;
 5. Back in the CloudFormation console, click **Next**
 6. Call the stack **PS-lab**
-7. In the Parameters section, provide your own username when asked. This will be the username of the IAM user that you are logged in as.&#x20;
-8. Click next a few times till you get to the following "Capabilities and transforms":
-9. You will need to check three boxes before you can create the stack.&#x20;
+7. Click next a few times till you get to the following "Capabilities and transforms":
+8. You will need to check three boxes before you can create the stack.&#x20;
 
 !["I have read and agree to terms and conditions"](<../../.gitbook/assets/image (14).png>)
 
@@ -246,7 +240,7 @@ Once the stack is done, let's head over to the Lambda console to see our functio
 
 ### Test the Lambda
 
-Create a test event. Call it whatever. The default contents are fine, the function is going to ignore it anyway.&#x20;
+Create a test event. The default contents are fine, the function is going to ignore it anyway.&#x20;
 
 The result should look like this:
 
@@ -289,7 +283,8 @@ We have permission to encrypt but not decrypt the parameter value.&#x20;
 
 ![I see u](<../../.gitbook/assets/image (282).png>)
 
-
+Note: if you test the Lambda immediately after you create the new parameter, then the Lambda test results might not show the secure parameter. \
+You can either wait a little longer or go to Lambda > configuration > edit and set the timeout to a smaller value. Then test again and you should see the secure string being shown, as in the screenshot above.&#x20;
 
 ## X-Ray
 
@@ -314,6 +309,3 @@ Delete the CloudFormation stack.&#x20;
 In Parameter store, delete the app secret you created.&#x20;
 
 Delete CloudWatch log group.&#x20;
-
-
-
