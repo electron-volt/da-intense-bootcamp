@@ -122,7 +122,11 @@ After reviewing the visual workflow, click **Next**.
 
 Name: MyAPIStateMachine.
 
-Permissions: **choose an existing role**. Pick the _step\_functions\_basic\_execution._
+#### Permissions
+
+If you completed the previous lab "Serverless workflow", then in the Permissions section select **choose an existing role**. you should already have a role called _step\_functions\_basic\_execution._ Pick that one. __&#x20;
+
+If you did not do the "Serverless workflow" lab, then please see the instructions on how to create the role _step\_functions\_basic\_execution_ in [https://eve-4.gitbook.io/developer-associate-intensive-course/day-5/application-integration/step-functions/lab-serverless-workflow#create-an-iam-role](https://eve-4.gitbook.io/developer-associate-intensive-course/day-5/application-integration/step-functions/lab-serverless-workflow#create-an-iam-role)
 
 Create the state machine.&#x20;
 
